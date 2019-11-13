@@ -40,7 +40,7 @@ class Produit:
         
 class ProduitPerissable(Produit):
     def __init__(self,  numEAN, identifiant, prixBase, dateFabrication, dureeConso):
-	Produit.__init__(self,numEAN, identifiant, prixBase, dateFabrication)
+	      Produit.__init__(self,numEAN, identifiant, prixBase, dateFabrication)
         self.dureeConso = timedelta(int(dureeConso))
     
     def enPromo(self):
